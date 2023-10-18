@@ -81,7 +81,10 @@ fetch("https://swapi.dev/api/people/")
               };
               
               var optionsBars = {
-                seriesBarDistance: 15
+                seriesBarDistance: 15,
+                axisY: {
+                  onlyInteger: true,
+                }
               };
               
               new Chartist.Bar('#chart2', dataBars, optionsBars);
